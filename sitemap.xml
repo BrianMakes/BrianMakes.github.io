@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://BrianMakes.github.io/about/</loc>
+    <lastmod>2020-05-24T10:05:39-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://BrianMakes.github.io/</loc>
+    <lastmod>2020-05-24T10:05:39-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://BrianMakes.github.io/post/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://BrianMakes.github.io/tags/powershell/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://BrianMakes.github.io/tags/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://BrianMakes.github.io/tags/techsnips/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://BrianMakes.github.io/post/techsnips-content-creator/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://BrianMakes.github.io/categories/</loc>
+  </url>
+  
+</urlset>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Minimal</title>
+    <link>https://BrianMakes.github.io/</link>
+    <description>Recent content on Minimal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 May 2020 10:05:39 -0400</lastBuildDate>
+    
+	<atom:link href="https://BrianMakes.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://BrianMakes.github.io/about/</link>
+      <pubDate>Sun, 24 May 2020 10:05:39 -0400</pubDate>
+      
+      <guid>https://BrianMakes.github.io/about/</guid>
+      <description>Hello World</description>
+    </item>
+    
+    <item>
+      <title>Techsnips content creator</title>
+      <link>https://BrianMakes.github.io/post/techsnips-content-creator/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://BrianMakes.github.io/post/techsnips-content-creator/</guid>
+      <description>Introduction TechSnips contributor</description>
+    </item>
+    
+  </channel>
+</rss>
