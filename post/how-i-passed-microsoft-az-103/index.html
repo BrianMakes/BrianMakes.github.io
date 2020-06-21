@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>How I Passed Microsoft AZ-103</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: grey;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://BrianMakes.github.io/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script>
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.71.0" />
+        
+
+        
+
+        
+            <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+
+        
+
+    </head>
+
+    <body>
+        
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand visible-xs" href="#">How I Passed Microsoft AZ-103</a>
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/about/">About</a></li>
+                            
+                                <li><a href="/post/">Posts</a></li>
+                            
+                                <li><a href="/project/">Projects</a></li>
+                            
+                        </ul>
+                    
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="https://github.com/BrianMakes/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/BrianMakes/"><i class="fa fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.twitch.tv/BrianMakes"><i class="fa fa-twitch"></i></a></li>
+                            
+                        </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+
+<main>
+
+    <div>
+        <h2>How I Passed Microsoft AZ-103</h2>
+        <h5>June 20, 2020</h5>
+        
+<a href="https://BrianMakes.github.io/tags/microsoft"><kbd class="item-tag">Microsoft</kbd></a>
+
+<a href="https://BrianMakes.github.io/tags/cert"><kbd class="item-tag">Cert</kbd></a>
+
+<a href="https://BrianMakes.github.io/tags/az-103"><kbd class="item-tag">AZ-103</kbd></a>
+
+<a href="https://BrianMakes.github.io/tags/az-104"><kbd class="item-tag">AZ-104</kbd></a>
+
+<a href="https://BrianMakes.github.io/tags/azure"><kbd class="item-tag">Azure</kbd></a>
+
+
+    </div>
+
+    <div align="start" class="content"><h1 id="how-i-studied-for-az-103-microsoft-azure-administrator">How I Studied for AZ-103: Microsoft Azure Administrator</h1>
+<h2 id="introduction">Introduction</h2>
+<p>The anecdotal stories I heard from those who had taken the AZ-104 beta is that it was a bit more networking focused than AZ-103. Networking is where I am the weakest. Therefore, I made it a priority to finish up studying and sit for AZ-103 before the exam is retired. Initially, I started from no experience with Azure. I did end up studying for, and passing, AZ-900 before finishing off my AZ-103 studies.</p>
+<p>Currently, there is still time to take AZ-103. You are able to sit for the exam until it retires on August 31, 2020. But, whichever exam you end up taking, the time you spend on AZ-103 focused study will not be wasted. There is a substantial amount of overlap. I am including the comparison of the exam topics here.</p>
+<p>The total time I spent prepping for the exam was about 6 weeks. That time ended up being broken into two 3-week sprints. My initial intention was to sit for the exam in March, but work swallowed all of my free time and studying was put on the back burner. So, I circled back with a second 3-week session beginning the last week of May.</p>
+<h2 id="exam-topics">Exam Topics</h2>
+<table>
+<thead>
+<tr>
+<th>AZ-103</th>
+<th> </th>
+<th>AZ-104</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Manage Azure subscriptions and resources (15-20%)</td>
+<td> </td>
+<td>Manage Azure identities and governance (15-20%)</td>
+</tr>
+<tr>
+<td>Implement and manage storage (15-20%)</td>
+<td> </td>
+<td>Implement and manage storage (10-15%)</td>
+</tr>
+<tr>
+<td>Deploy and manage virtual machines (VMs) (15-20%)</td>
+<td> </td>
+<td>Deploy and manage Azure compute resources (25-30%)</td>
+</tr>
+<tr>
+<td>Configure and manage virtual networks (30-35%)</td>
+<td> </td>
+<td>Configure and manage virtual networking (30-35%)</td>
+</tr>
+<tr>
+<td>Manage identities (15-20%)</td>
+<td> </td>
+<td>Monitor and back up Azure resources (10-15%)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="resources-i-used-to-study">Resources I Used to Study</h2>
+<h3 id="strategy">Strategy</h3>
+<p>Josh Duffney&rsquo;s <a href="http://duffney.io/AZ103-StudyGuide">AZ-103 Study Guide</a></p>
+<h3 id="videocourse-content">Video/Course Content</h3>
+<p>CloudSkills.io&rsquo;s <a href="https://portal.cloudskills.io/az-104">Azure Administrator (AZ-104) Exam Prep Course</a></p>
+<h3 id="reference-material">Reference Material</h3>
+<p>Thomas Maurer&rsquo;s <a href="https://www.thomasmaurer.ch/2020/03/az-104-study-guide-azure-administrator/">Study Guide</a></p>
+<h3 id="practice-exams">Practice Exams</h3>
+<p>WhizLabs.com <a href="https://www.whizlabs.com/microsoft-azure-exam-az-103-certification/">AZ-103</a> and <a href="https://www.whizlabs.com/microsoft-azure-exam-az-104-certification/">AZ-104</a></p>
+<h2 id="what-worked-for-me">What Worked for Me?</h2>
+<p>If I wanted to keep this post to one bulleted list then it would be this:</p>
+<blockquote>
+<ul>
+<li>Read Josh&rsquo;s AZ-103 Study Guide</li>
+<li>Schedule Exam and Study Time</li>
+<li>Pick the study Tools/Materials</li>
+<li>Use Practice Exams</li>
+<li>Do Labs, and Do More Labs</li>
+</ul>
+</blockquote>
+<p>I am not going to repeat Josh&rsquo;s article here. The primary item I took to heart was to commit to a date for the exam and to plan out my study time with that date as a goal. I ended up getting off track, as I mentioned above. When I returned to finish the second 3-week sprint, sticking to a schedule was critical.</p>
+<p>When I am attempting to learn something completely new, I learn best from video or live training content. I tried a couple of options, but the <a href="https://portal.cloudskills.io/az-104">Azure Administrator (AZ-104) Exam Prep Course</a> from CloudSkills.io ended up being the course that worked best for me. The course was divided into roughly one hour sessions. I scheduled out my view over the first week of my final 3-week study sprint (nine days- a week and the extra trailing weekend). After each session, I would do some kind of hands-on lab work to reinforce the material. I made liberal use of the ability to speed up the video playback to 1.5x.</p>
+<p>In the last two weeks, I added in the practice exams from Whizlabs.com, working through both the AZ-103 and AZ-104 exams. I would review any questions I&rsquo;d missed, Whizlabs does a great job providing links back to the Microsoft Docs that apply to the question content. I would take the exam the following day to make sure the material stuck. It was beneficial having access to both sets of exam questions. The ability for me to move through practice exams without repeating questions gave me the confidence to know I was grasping the material and not just memorizing answers.</p>
+<p>I bought a few books, none of which I found all that helpful. The only reading material I actually ended up using were the Microsoft Docs themselves. I included a link to Thomas Maurer&rsquo;s study guides, he links each topic directly to the relevant Microsoft Docs.</p>
+<h2 id="lab-it-up">Lab It Up!!</h2>
+<p>Labs were important to my study process; I want to call them out again in their own section.</p>
+<p>I cannot recommend lab time enough, especially if you are not touching Azure daily in your current role at work. Doing the hands on work helps the content stick. AZ-103 is role based, you need to be able to put the exam topics to work, in your actual day to day practice. Additionally, the exam has questions covering the Azure Portal, AZ Cli and Powershell. Jeff Hicks talks about daily practice when it comes to learning PowerShell. I was working on labs from the beginning of my exam prep, and for the last three weeks I was doing labs daily.</p>
+<h2 id="exam-day">Exam Day</h2>
+<p>While my normal testing center was open, I was not comfortable with scheduling an in-person exam during the pandemic. I am in a state that did not handle social distancing well, and the numbers were not encouraging. Instead, I opted to take the exam in my office, remotely proctored. As Pearson Vue recommends, I validated my PC, network, and office setup at least 24 hours prior to the exam. I was warned once by the online proctor during the exam. The proctor just popped a chat box up on the screen. I was leaning on my elbow with my hand on my chin, my hand hiding my mouth. (An easy fix!) They want to be sure you are not reading the questions out loud, either recording them or getting outside assistance answering them.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>What worked for me was committing to a date, and formulating a plan. On top of that, doing some kinds of hands on lab daily. I don&rsquo;t work with Azure day to day in my current role, I would not have been able to get up to speed without it.</p>
+<p>Please hit me up on <a href="https://twitter.com/BrianMakes">twitter</a> if I can answer any questions for you.</p>
+</div>
+
+    
+    
+    
+
+    
+    
+
+</main>
+
+        <footer>
+            <p class="copyright text-muted">© All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a>.</p>
+        </footer>
+
+        
+
+        
+    </body>
+
+</html>
+
