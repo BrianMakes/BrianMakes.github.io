@@ -6,10 +6,19 @@
     <description>Recent content in Cert on BrianMakes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://BrianMakes.github.io/tags/cert/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MS-900 Things I would normally look up</title>
+      <link>https://BrianMakes.github.io/post/ms-900/</link>
+      <pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://BrianMakes.github.io/post/ms-900/</guid>
+      <description>Why did I decided to take MS-900 Microsoft 365 Fundamentals Introduction Microsoft moved to Role-Based Certifications, and I was slow to adapt. In 2018 I passed the exams for the MCSA: Office 365 and MCSE: Productivity. The current global pandemic left me stuck at home and in need of distraction. I decided this was the year to bring my Microsoft Certifications up to date. So, while Microsoft 365 Fundamentals is not a prerequisite for the Enterprise Administrator Expert certification, I decided to take it anyway.</description>
+    </item>
     
     <item>
       <title>How I Passed Microsoft AZ-103</title>

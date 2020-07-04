@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Microsoft on BrianMakes</title>
-    <link>https://BrianMakes.github.io/tags/microsoft/</link>
-    <description>Recent content in Microsoft on BrianMakes</description>
+    <title>MS-900 on BrianMakes</title>
+    <link>https://BrianMakes.github.io/tags/ms-900/</link>
+    <description>Recent content in MS-900 on BrianMakes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 04 Jul 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://BrianMakes.github.io/tags/microsoft/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://BrianMakes.github.io/tags/ms-900/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>https://BrianMakes.github.io/post/ms-900/</guid>
       <description>Why did I decided to take MS-900 Microsoft 365 Fundamentals Introduction Microsoft moved to Role-Based Certifications, and I was slow to adapt. In 2018 I passed the exams for the MCSA: Office 365 and MCSE: Productivity. The current global pandemic left me stuck at home and in need of distraction. I decided this was the year to bring my Microsoft Certifications up to date. So, while Microsoft 365 Fundamentals is not a prerequisite for the Enterprise Administrator Expert certification, I decided to take it anyway.</description>
-    </item>
-    
-    <item>
-      <title>How I Passed Microsoft AZ-103</title>
-      <link>https://BrianMakes.github.io/post/how-i-passed-microsoft-az-103/</link>
-      <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://BrianMakes.github.io/post/how-i-passed-microsoft-az-103/</guid>
-      <description>How I Studied for AZ-103: Microsoft Azure Administrator Introduction The anecdotal stories I heard from those who had taken the AZ-104 beta is that it was a bit more networking focused than AZ-103. Networking is where I am the weakest. Therefore, I made it a priority to finish up studying and sit for AZ-103 before the exam is retired. Initially, I started from no experience with Azure. I did end up studying for, and passing, AZ-900 before finishing off my AZ-103 studies.</description>
     </item>
     
   </channel>

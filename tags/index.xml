@@ -6,10 +6,46 @@
     <description>Recent content in Tags on BrianMakes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://BrianMakes.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cert</title>
+      <link>https://BrianMakes.github.io/tags/cert/</link>
+      <pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://BrianMakes.github.io/tags/cert/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microsoft</title>
+      <link>https://BrianMakes.github.io/tags/microsoft/</link>
+      <pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://BrianMakes.github.io/tags/microsoft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microsoft 365</title>
+      <link>https://BrianMakes.github.io/tags/microsoft-365/</link>
+      <pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://BrianMakes.github.io/tags/microsoft-365/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MS-900</title>
+      <link>https://BrianMakes.github.io/tags/ms-900/</link>
+      <pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://BrianMakes.github.io/tags/ms-900/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>AZ-103</title>
@@ -35,24 +71,6 @@
       <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://BrianMakes.github.io/tags/azure/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cert</title>
-      <link>https://BrianMakes.github.io/tags/cert/</link>
-      <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://BrianMakes.github.io/tags/cert/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Microsoft</title>
-      <link>https://BrianMakes.github.io/tags/microsoft/</link>
-      <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://BrianMakes.github.io/tags/microsoft/</guid>
       <description></description>
     </item>
     
