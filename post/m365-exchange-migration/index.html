@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Migrating Email to Microsoft 365</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Playfair Display', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: #829356;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://BrianMakes.github.io/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair%20Display">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script>
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.71.0" />
+        
+
+        
+
+        
+            <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+
+        
+
+    </head>
+
+    <body>
+        
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand visible-xs" href="#">Migrating Email to Microsoft 365</a>
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/about/">About</a></li>
+                            
+                                <li><a href="/post/">Posts</a></li>
+                            
+                        </ul>
+                    
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="https://github.com/BrianMakes/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/BrianMakes/"><i class="fa fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.twitch.tv/BrianMakes"><i class="fa fa-twitch"></i></a></li>
+                            
+                        </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+
+<main>
+
+    <div>
+        <h2>Migrating Email to Microsoft 365</h2>
+        <h5>July 11, 2020</h5>
+        
+<a href="https://BrianMakes.github.io/tags/microsoft-365"><kbd class="item-tag">Microsoft 365</kbd></a>
+
+<a href="https://BrianMakes.github.io/tags/exchange"><kbd class="item-tag">Exchange</kbd></a>
+
+<a href="https://BrianMakes.github.io/tags/ms-100"><kbd class="item-tag">MS-100</kbd></a>
+
+
+    </div>
+
+    <div align="start" class="content"><h1 id="study-guide---migrating-email-to-microsoft-365">Study Guide - Migrating Email to Microsoft 365</h1>
+<p>When I was studying to complete my MCSA: Office 365 in 2018, I struggled a bit keeping the multiple migration options straight. I needed to work through the material again anyway, maybe my notes will help others that are studying.</p>
+<p>I worked through the <a href="https://docs.microsoft.com/en-us/exchange/mailbox-migration/mailbox-migration">Exchange Online Docs</a> and made a few notes.</p>
+<h2 id="migration-types">Migration Types</h2>
+<p>Most of the study material for MS-100 talks about four primary migration methods: Staged, Cutover, Hybrid and IMAP. Lets walk through the decision making process together. We will take a look at the common question you need to ask yourself along the way.</p>
+<p>###Exchange
+The first question we need to ask, &ldquo;Are we migrating from Exchange?&rdquo; If the answer to that question is yes, then we have three options to consider.</p>
+<h4 id="cutover-migration">Cutover Migration</h4>
+<p>The Cutover Migration is supported when you are moving from Exchange 2003, Exchange 2007, Exchange 2010, or Exchange 2013. However, Staged Migrations should only be performed if there are fewer than 2000 mailboxes. Depending on the performance of your current Exchange server and bandwidth limits, you may see issues with migrations over 150 mailboxes.</p>
+<p>Cutover Migrations are indicated when the source server is Exchange, and the number of mailboxes is less that 2000.</p>
+<h4 id="staged-migration">Staged Migration</h4>
+<p>The Staged Migration is supported when you are moving from Exchange 2003 and 2007 server, that have over 2000 mailboxes. Additionally, if you have an Exchange 2003 or 2007 migration that is being impacted by performance or bandwidth issues. There may be time when you will want to use Staged Migrations for 150 to 2000 mailbox migrations.</p>
+<p>Staged Migrations are the best answer for large migrations (2000+ mailboxes) from Exchange 2003 and Exchange 2007.</p>
+<h4 id="hybrid-migration">Hybrid Migration</h4>
+<p>The Hybrid Migration is used for migrations over 150 (or 2000) for all version of Exchange since 2010. Microsoft identifies <a href="https://docs.microsoft.com/en-us/exchange/mail-migration-jump">three</a> different types of Hybrid migrations - full, minimal, and express.</p>
+<ul>
+<li>Full - Large sized orgs, thousands of mailboxes, full integration back to on prem services</li>
+<li>Minimal - medium sized orgs, few hundred to couple thousand mailboxes, limited integration</li>
+<li>Express - small sized org, quick migration time frame</li>
+</ul>
+<p>Hybrid Migrations are going to be the answer if you are dealing with more than 150 (2000) mailboxes on Exchange 2010 and on.</p>
+<p>###Other Systems</p>
+<h4 id="imap-migration">IMAP Migration</h4>
+<p>IMAP Migration is the choice when you are migrating from email services like Gmail, Outlook.com, and other email systems that support the IMAP protocol.</p>
+<p>When using IMAP for migrations, keep in mind that you will only be able to import mailbox folders. Things like tasks, calendar entries, and tasks cannot be migrated using IMAP.</p>
+<p>###PST Import
+Worth noting on its own. If your organization has a large number of mailboxes exported to PST, you can use the Import Service to move the mail into Microsoft 365.</p>
+<p><img src="/media/M365MailMigration.png" alt="Migration Type Flow Chart"></p>
+<p>##Example Deployment Decisions
+Using the flow chart, and our previous notes, its going to be fairly easy to understand which migration method to use. Lets run through a couple of examples.</p>
+<p>###Exchange 2007, low bandwidth
+We have been tasked with migrating from Exchange 2007 with 1500 users, to Microsoft 365.</p>
+<ul>
+<li>Migrating from Exchange? - <strong>Yes</strong></li>
+<li>2000 or Less Users? - <strong>Yes</strong></li>
+<li>150 or Less Users? - <strong>No</strong></li>
+<li>Performance or Bandwidth issues? <strong>Yes</strong> <em>Scenario identified bandwidth problems</em></li>
+<li>Exchange 2003 or 2007 - <strong>Yes</strong></li>
+</ul>
+<p>The best choice for this scenario is Staged Migration.</p>
+<p>###3rd Party Email Provider
+We have been tasked with moving 300 from Outlook.com to Microsoft 365.</p>
+<ul>
+<li>Migrating from Exchange? - <strong>No</strong></li>
+<li>Does the current email provider support IMAP? <strong>Yes</strong></li>
+</ul>
+<p>The best choice for this scenario is IMAP Migration.</p>
+<p>###Exchange 2013, 10,000 Mailboxes
+We have been tasked with migrating from Exchange 2013 with 10,000 users.</p>
+<ul>
+<li>Migrating from Exchange? - <strong>Yes</strong></li>
+<li>2000 or Less Users? - <strong>No</strong></li>
+<li>Exchange 2003 or 2007 - <strong>No</strong></li>
+</ul>
+<p>The best choice for this scenario is Hybrid Migration.</p>
+<p>##Conclusion</p>
+<p>If you are having trouble remember the details for each migration type during your exam prep, I recommend taking 15 minutes and drawing out a decision workflow for yourself. Active note taking has been shown to help improve comprehension and retention. There are only so many reasonable iterations of migration scenarios, take some time and run through the decision process to help prepare yourself to answer questions like these on the exam.</p>
+</div>
+
+    
+    
+    
+        <h4 class="page-header">Related</h4>
+         <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/ms-900/">MS-900 Things I would normally look up</a></h4>
+    <h5>July 4, 2020</h5>
+    
+<a href="https://BrianMakes.github.io/tags/microsoft"><kbd class="item-tag">Microsoft</kbd></a>
+
+<a href="https://BrianMakes.github.io/tags/cert"><kbd class="item-tag">Cert</kbd></a>
+
+<a href="https://BrianMakes.github.io/tags/microsoft-365"><kbd class="item-tag">Microsoft 365</kbd></a>
+
+<a href="https://BrianMakes.github.io/tags/ms-900"><kbd class="item-tag">MS-900</kbd></a>
+
+
+
+</div>
+ 
+    
+
+    
+    
+
+</main>
+
+        <footer>
+            <p class="copyright text-muted">© All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a>.</p>
+        </footer>
+
+        
+
+        
+    </body>
+
+</html>
+

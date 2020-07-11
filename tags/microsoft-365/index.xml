@@ -6,10 +6,21 @@
     <description>Recent content in Microsoft 365 on BrianMakes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://BrianMakes.github.io/tags/microsoft-365/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Migrating Email to Microsoft 365</title>
+      <link>https://BrianMakes.github.io/post/m365-exchange-migration/</link>
+      <pubDate>Sat, 11 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://BrianMakes.github.io/post/m365-exchange-migration/</guid>
+      <description>Study Guide - Migrating Email to Microsoft 365 When I was studying to complete my MCSA: Office 365 in 2018, I struggled a bit keeping the multiple migration options straight. I needed to work through the material again anyway, maybe my notes will help others that are studying.
+I worked through the Exchange Online Docs and made a few notes.
+Migration Types Most of the study material for MS-100 talks about four primary migration methods: Staged, Cutover, Hybrid and IMAP.</description>
+    </item>
     
     <item>
       <title>MS-900 Things I would normally look up</title>
