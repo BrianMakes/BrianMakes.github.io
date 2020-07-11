@@ -140,8 +140,8 @@
 <p>I worked through the <a href="https://docs.microsoft.com/en-us/exchange/mailbox-migration/mailbox-migration">Exchange Online Docs</a> and made a few notes.</p>
 <h2 id="migration-types">Migration Types</h2>
 <p>Most of the study material for MS-100 talks about four primary migration methods: Staged, Cutover, Hybrid and IMAP. Lets walk through the decision making process together. We will take a look at the common question you need to ask yourself along the way.</p>
-<p>###Exchange
-The first question we need to ask, &ldquo;Are we migrating from Exchange?&rdquo; If the answer to that question is yes, then we have three options to consider.</p>
+<h3 id="exchange">Exchange</h3>
+<p>The first question we need to ask, &ldquo;Are we migrating from Exchange?&rdquo; If the answer to that question is yes, then we have three options to consider.</p>
 <h4 id="cutover-migration">Cutover Migration</h4>
 <p>The Cutover Migration is supported when you are moving from Exchange 2003, Exchange 2007, Exchange 2010, or Exchange 2013. However, Staged Migrations should only be performed if there are fewer than 2000 mailboxes. Depending on the performance of your current Exchange server and bandwidth limits, you may see issues with migrations over 150 mailboxes.</p>
 <p>Cutover Migrations are indicated when the source server is Exchange, and the number of mailboxes is less that 2000.</p>
@@ -156,17 +156,17 @@ The first question we need to ask, &ldquo;Are we migrating from Exchange?&rdquo;
 <li>Express - small sized org, quick migration time frame</li>
 </ul>
 <p>Hybrid Migrations are going to be the answer if you are dealing with more than 150 (2000) mailboxes on Exchange 2010 and on.</p>
-<p>###Other Systems</p>
+<h3 id="other-systems">Other Systems</h3>
 <h4 id="imap-migration">IMAP Migration</h4>
 <p>IMAP Migration is the choice when you are migrating from email services like Gmail, Outlook.com, and other email systems that support the IMAP protocol.</p>
 <p>When using IMAP for migrations, keep in mind that you will only be able to import mailbox folders. Things like tasks, calendar entries, and tasks cannot be migrated using IMAP.</p>
-<p>###PST Import
-Worth noting on its own. If your organization has a large number of mailboxes exported to PST, you can use the Import Service to move the mail into Microsoft 365.</p>
+<h3 id="pst-import">PST Import</h3>
+<p>Worth noting on its own. If your organization has a large number of mailboxes exported to PST, you can use the Import Service to move the mail into Microsoft 365.</p>
 <p><img src="/media/M365MailMigration.png" alt="Migration Type Flow Chart"></p>
-<p>##Example Deployment Decisions
-Using the flow chart, and our previous notes, its going to be fairly easy to understand which migration method to use. Lets run through a couple of examples.</p>
-<p>###Exchange 2007, low bandwidth
-We have been tasked with migrating from Exchange 2007 with 1500 users, to Microsoft 365.</p>
+<h2 id="example-deployment-decisions">Example Deployment Decisions</h2>
+<p>Using the flow chart, and our previous notes, its going to be fairly easy to understand which migration method to use. Lets run through a couple of examples.</p>
+<h3 id="exchange-2007-low-bandwidth">Exchange 2007, low bandwidth</h3>
+<p>We have been tasked with migrating from Exchange 2007 with 1500 users, to Microsoft 365.</p>
 <ul>
 <li>Migrating from Exchange? - <strong>Yes</strong></li>
 <li>2000 or Less Users? - <strong>Yes</strong></li>
@@ -175,22 +175,22 @@ We have been tasked with migrating from Exchange 2007 with 1500 users, to Micros
 <li>Exchange 2003 or 2007 - <strong>Yes</strong></li>
 </ul>
 <p>The best choice for this scenario is Staged Migration.</p>
-<p>###3rd Party Email Provider
-We have been tasked with moving 300 from Outlook.com to Microsoft 365.</p>
+<h3 id="3rd-party-email-provider">3rd Party Email Provider</h3>
+<p>We have been tasked with moving 300 from Outlook.com to Microsoft 365.</p>
 <ul>
 <li>Migrating from Exchange? - <strong>No</strong></li>
 <li>Does the current email provider support IMAP? <strong>Yes</strong></li>
 </ul>
 <p>The best choice for this scenario is IMAP Migration.</p>
-<p>###Exchange 2013, 10,000 Mailboxes
-We have been tasked with migrating from Exchange 2013 with 10,000 users.</p>
+<h3 id="exchange-2013-10000-mailboxes">Exchange 2013, 10,000 Mailboxes</h3>
+<p>We have been tasked with migrating from Exchange 2013 with 10,000 users.</p>
 <ul>
 <li>Migrating from Exchange? - <strong>Yes</strong></li>
 <li>2000 or Less Users? - <strong>No</strong></li>
 <li>Exchange 2003 or 2007 - <strong>No</strong></li>
 </ul>
 <p>The best choice for this scenario is Hybrid Migration.</p>
-<p>##Conclusion</p>
+<h2 id="conclusion">Conclusion</h2>
 <p>If you are having trouble remember the details for each migration type during your exam prep, I recommend taking 15 minutes and drawing out a decision workflow for yourself. Active note taking has been shown to help improve comprehension and retention. There are only so many reasonable iterations of migration scenarios, take some time and run through the decision process to help prepare yourself to answer questions like these on the exam.</p>
 </div>
 
