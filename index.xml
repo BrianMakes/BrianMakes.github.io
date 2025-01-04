@@ -2,62 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BrianMakes</title>
-    <link>https://BrianMakes.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on BrianMakes</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 May 2020 10:05:39 -0400</lastBuildDate>
-    
-	<atom:link href="https://BrianMakes.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Migrating Email to Microsoft 365</title>
-      <link>https://BrianMakes.github.io/post/m365-exchange-migration/</link>
-      <pubDate>Sat, 11 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://BrianMakes.github.io/post/m365-exchange-migration/</guid>
-      <description>Study Guide - Migrating Email to Microsoft 365 When I was studying to complete my MCSA: Office 365 in 2018, I struggled a bit keeping the multiple migration options straight. I needed to work through the material again anyway, maybe my notes will help others that are studying.
-I worked through the Exchange Online Docs and made a few notes.
-Migration Types Most of the study material for MS-100 talks about four primary migration methods: Staged, Cutover, Hybrid and IMAP.</description>
-    </item>
-    
-    <item>
-      <title>MS-900 Things I would normally look up</title>
-      <link>https://BrianMakes.github.io/post/ms-900/</link>
-      <pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://BrianMakes.github.io/post/ms-900/</guid>
-      <description>Why did I decided to take MS-900 Microsoft 365 Fundamentals Introduction Microsoft moved to Role-Based Certifications, and I was slow to adapt. In 2018 I passed the exams for the MCSA: Office 365 and MCSE: Productivity. The current global pandemic left me stuck at home and in need of distraction. I decided this was the year to bring my Microsoft Certifications up to date. So, while Microsoft 365 Fundamentals is not a prerequisite for the Enterprise Administrator Expert certification, I decided to take it anyway.</description>
-    </item>
-    
-    <item>
-      <title>How I Passed Microsoft AZ-103</title>
-      <link>https://BrianMakes.github.io/post/how-i-passed-microsoft-az-103/</link>
-      <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://BrianMakes.github.io/post/how-i-passed-microsoft-az-103/</guid>
-      <description>How I Studied for AZ-103: Microsoft Azure Administrator Introduction The anecdotal stories I heard from those who had taken the AZ-104 beta is that it was a bit more networking focused than AZ-103. Networking is where I am the weakest. Therefore, I made it a priority to finish up studying and sit for AZ-103 before the exam is retired. Initially, I started from no experience with Azure. I did end up studying for, and passing, AZ-900 before finishing off my AZ-103 studies.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://BrianMakes.github.io/about/</link>
-      <pubDate>Sun, 24 May 2020 10:05:39 -0400</pubDate>
-      
-      <guid>https://BrianMakes.github.io/about/</guid>
-      <description>Website for BrianMakes</description>
-    </item>
-    
-    <item>
-      <title>Techsnips content creator</title>
-      <link>https://BrianMakes.github.io/post/techsnips-content-creator/</link>
-      <pubDate>Sun, 24 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://BrianMakes.github.io/post/techsnips-content-creator/</guid>
-      <description>TechSnips Contributor Shortly after I started participating in the PowerShell user community I had the opportunity to become a contributor at TechSnips.
-TechSnips is an IT career development platform that provides free learning content to people in information technology. I think its an interesting concept. Snips are short, 1-10 minute screencasts on a range of technology-related topics like cloud computing, programming, system administration, etc. The primary difference from other video learning formats, there is absolutely no fluff.</description>
-    </item>
-    
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
